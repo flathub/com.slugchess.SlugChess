@@ -43,12 +43,15 @@ modules:
       # add .desktop
       - 'install -Dm 644 -t /app/share/applications flatpak/com.slugchess.SlugChess.desktop'
       # add manifest
+      # temp fix for com.slugchess.SlugChess.appdata.xml in repo
       - 'install -Dm 644 -t /app/share/metainfo flatpak/com.slugchess.SlugChess.metainfo.xml'
       - 'install.sh'
-    sources: 
+    sources:
       - type: git
         url: 'https://gitlab.com/slugchess/slugchess.git'
         tag: 'v1.0.2'
         commit: 'f085cc90a0e40a56f7fa35b569bfa867db64f25d'
       - nuget-sources.json
-
+      # temp fix for com.slugchess.SlugChess.appdata.xml in repo
+      - type: patch
+        path: metainfo.patch
