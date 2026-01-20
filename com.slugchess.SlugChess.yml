@@ -12,9 +12,9 @@ build-options:
   env: 
     DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
   arch:
-#    aarch64:
-#      env:
-#        RUNTIME: linux-arm64
+    aarch64:
+      env:
+        RUNTIME: linux-arm64
     x86_64: 
       env: 
         RUNTIME: linux-x64
@@ -43,15 +43,12 @@ modules:
       # add .desktop
       - 'install -Dm 644 -t /app/share/applications flatpak/com.slugchess.SlugChess.desktop'
       # add manifest
-      # temp fix for com.slugchess.SlugChess.appdata.xml in repo
       - 'install -Dm 644 -t /app/share/metainfo flatpak/com.slugchess.SlugChess.metainfo.xml'
       - 'install.sh'
     sources:
       - type: git
         url: 'https://gitlab.com/slugchess/slugchess.git'
-        tag: 'v1.0.2'
-        commit: 'f085cc90a0e40a56f7fa35b569bfa867db64f25d'
+        tag: 'v1.0.2-1'
+        commit: '9092292295a63d20ab4208827c586daf5cd72842'
       - nuget-sources.json
-      # temp fix for com.slugchess.SlugChess.appdata.xml in repo
-      - type: patch
-        path: metainfo.patch
+

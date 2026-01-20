@@ -176,10 +176,10 @@
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/grpc.tools/2.76.0/grpc.tools.2.76.0.nupkg",
-        "sha512": "d99142541ea7d87d5f47dfadfe2b25a4a6d7ca0eefc1c1c2bcf3165363d817c6a56c2435fc210cc3a02311a558121a579e77418627717c609d5a64495163ba63",
+        "url": "https://api.nuget.org/v3-flatcontainer/grpc.tools/2.67.0/grpc.tools.2.67.0.nupkg",
+        "sha512": "d82a6b7572554f0cc343c245b144a76825c47eff13369736cf4db02f9b48134de0dc2051bbfb1651948b1ddc0bc6b8e97affdbf82414885a95f08aeb4ff9ca60",
         "dest": "nuget-sources",
-        "dest-filename": "grpc.tools.2.76.0.nupkg"
+        "dest-filename": "grpc.tools.2.67.0.nupkg"
     },
     {
         "type": "file",
